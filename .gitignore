@@ -1,38 +1,35 @@
-### General
-*.orig
-*.~
-.DS_Store
-ENABLE_INSTALL_TOOL
-FIRST_INSTALL
-
-### Typo3 template
-# Ignore several upload and file directories.
-/public/fileadmin/user_upload/
-/public/fileadmin/_temp_/
-/public/fileadmin/_processed_/
-/public/uploads/
-
-# Ignore cache.
-/public/typo3conf/temp_CACHED*
-/public/typo3conf/temp_fieldInfo.php
-/public/typo3conf/deprecation_*.log
-
-# Ignore system folders, you should have them symlinked.
-/public/typo3
-/public/typo3_src
-/public/typo3_src-*
-/public/index.php
-
-# Ignore temp directory.
-/public/typo3temp/
-
-# Ignore typo3 extensions installed with composer.
-/public/typo3conf/ext/realurl/
-/public/typo3conf/ext/vhs/
-
-### Composer template
+### Composer
 composer.phar
 /vendor/
 
 # Commit your application's lock file http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file
 # You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
+
+### Typo3
+# Ignore install tool files
+ENABLE_INSTALL_TOOL
+FIRST_INSTALL
+
+# Ignore several upload and file directories
+/public/fileadmin/user_upload/
+/public/fileadmin/_temp_/
+/public/fileadmin/_processed_/
+/public/uploads/
+
+# Ignore cache
+/public/typo3conf/temp_CACHED*
+/public/typo3conf/temp_fieldInfo.php
+/public/typo3conf/deprecation_*.log
+
+# Ignore system folders, you should have them symlinked
+/public/typo3
+/public/typo3_src
+/public/typo3_src-*
+/public/index.php
+
+# Ignore temp directory
+/public/typo3temp/
+
+# Ignore typo3 extensions installed with composer
+/public/typo3conf/ext/realurl/
+/public/typo3conf/ext/vhs/
