@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.0">
+  <file>
+    <body>
+      <trans-unit id="plugin_title" xml:space="preserve">
+        <source>News article</source>
+      </trans-unit>
+      <trans-unit id="plugin_description" xml:space="preserve">
+        <source>Renders one or more news articles</source>
+      </trans-unit>
+      <trans-unit id="flexform.category" xml:space="preserve">
+        <source>Category</source>
+      </trans-unit>
+      <trans-unit id="flexform.items" xml:space="preserve">
+        <source>News items</source>
+      </trans-unit>
+      <trans-unit id="tx_typo3demo_news_domain_model_item" xml:space="preserve">
+        <source>News</source>
+      </trans-unit>
+      <trans-unit id="tx_typo3demo_news_domain_model_item.title" xml:space="preserve">
+        <source>Titel</source>
+      </trans-unit>
+      <trans-unit id="tx_typo3demo_news_domain_model_item.text" xml:space="preserve">
+        <source>Text</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

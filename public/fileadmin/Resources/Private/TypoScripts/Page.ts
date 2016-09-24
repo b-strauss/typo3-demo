@@ -1,0 +1,1 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:fileadmin/Resources/Private/TypoScripts/Page/Rte.ts">

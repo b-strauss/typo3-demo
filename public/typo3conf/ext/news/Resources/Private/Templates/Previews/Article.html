@@ -1,0 +1,20 @@
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+<h1>
+  <v:l key="LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:plugin_title"/>
+</h1>
+<p>
+  <strong>Category:</strong> {category}
+</p>
+<p>
+  <strong>Articles:</strong>
+</p>
+<ul>
+  <f:for each="{items}" as="item">
+    <li>
+      <p>
+        <strong>Title:</strong> {item.title}<br>
+        <strong>Text:</strong> {item.text}
+      </p>
+    </li>
+  </f:for>
+</ul>

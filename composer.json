@@ -1,0 +1,35 @@
+{
+  "name": "b-strauss/typo3-demo",
+  "description": "Typo3 cms demo project",
+  "type": "project",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://composer.typo3.org/"
+    }
+  ],
+  "require": {
+    "typo3/cms": "^7.6",
+    "dmitryd/typo3-realurl": "^2.0",
+    "fluidtypo3/vhs": "^2.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "BStrauss\\Engine\\": "public/typo3conf/ext/engine/Classes",
+      "BStrauss\\Typo3Demo\\News\\": "public/typo3conf/ext/news/Classes"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "cms-package-dir": "{$vendor-dir}/typo3/cms",
+      "web-dir": "public"
+    }
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Benjamin Strauß",
+      "homepage": "https://github.com/b-strauss"
+    }
+  ]
+}
