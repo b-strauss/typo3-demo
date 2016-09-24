@@ -13,8 +13,6 @@ CREATE TABLE tx_typo3demo_news_domain_model_item (
   endtime          INT(11) DEFAULT '0'     NOT NULL,
   tt_content       INT(11)                          DEFAULT NULL,
   sorting          INT(11) DEFAULT '0'     NOT NULL,
-
-  # localization fields
   sys_language_uid INT(11) DEFAULT '0'     NOT NULL,
   l18n_parent      INT(11) DEFAULT '0'     NOT NULL,
   l18n_diffsource  mediumblob              NOT NULL,
