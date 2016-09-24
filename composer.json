@@ -2,6 +2,13 @@
   "name": "b-strauss/typo3-demo",
   "description": "Typo3 cms demo project",
   "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Benjamin Strauß",
+      "homepage": "https://github.com/b-strauss"
+    }
+  ],
   "repositories": [
     {
       "type": "composer",
@@ -24,12 +31,5 @@
       "cms-package-dir": "{$vendor-dir}/typo3/cms",
       "web-dir": "public"
     }
-  },
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Benjamin Strauß",
-      "homepage": "https://github.com/b-strauss"
-    }
-  ]
+  }
 }
