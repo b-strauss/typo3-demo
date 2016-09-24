@@ -3,7 +3,10 @@
   <h2>{category}</h2>
   <ul>
     <f:for each="{items}" as="item">
-      <li>{item.title}</li>
+      <li>
+        <h3>{item.title}</h3>
+        <p>{item.text}</p>
+      </li>
     </f:for>
   </ul>
 </section>

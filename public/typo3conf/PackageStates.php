@@ -258,6 +258,12 @@ return [
             'packagePath' => 'typo3conf/ext/engine/',
             'suggestions' => [],
         ],
+        'news' => [
+            'composerName' => 'news',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/news/',
+            'suggestions' => [],
+        ],
         'realurl' => [
             'composerName' => 'dmitryd/typo3-realurl',
             'state' => 'active',
@@ -310,12 +316,6 @@ return [
             'composerName' => 'typo3/cms-linkvalidator',
             'state' => 'inactive',
             'packagePath' => 'typo3/sysext/linkvalidator/',
-            'suggestions' => [],
-        ],
-        'news' => [
-            'composerName' => 'news',
-            'state' => 'inactive',
-            'packagePath' => 'typo3conf/ext/news/',
             'suggestions' => [],
         ],
         'opendocs' => [

@@ -3,13 +3,14 @@ return [
     'BE' => [
         'debug' => true,
         'explicitADmode' => 'explicitAllow',
-        'installToolPassword' => '$P$C5abJvKM1V/OJlPJiCrJ./OFV/id4E/',
+        'installToolPassword' => '$P$C32l25iqqNRyUgD2nvVBYeab9dzzcz1',
         'loginSecurityLevel' => 'rsa',
     ],
     'EXT' => [
         'extConf' => [
             'css_styled_content' => 'a:1:{s:32:"loadContentElementWizardTsConfig";s:1:"1";}',
             'engine' => 'a:0:{}',
+            'news' => 'a:0:{}',
             'realurl' => 'a:4:{s:10:"configFile";s:34:"typo3conf/RealurlConfiguration.php";s:14:"enableAutoConf";s:1:"0";s:14:"autoConfFormat";s:1:"1";s:12:"enableDevLog";s:1:"0";}',
             'rsaauth' => 'a:1:{s:18:"temporaryDirectory";s:0:"";}',
             'saltedpasswords' => 'a:2:{s:3:"BE.";a:4:{s:21:"saltedPWHashingMethod";s:41:"TYPO3\\CMS\\Saltedpasswords\\Salt\\PhpassSalt";s:11:"forceSalted";i:0;s:15:"onlyAuthService";i:0;s:12:"updatePasswd";i:1;}s:3:"FE.";a:5:{s:7:"enabled";i:1;s:21:"saltedPWHashingMethod";s:41:"TYPO3\\CMS\\Saltedpasswords\\Salt\\PhpassSalt";s:11:"forceSalted";i:0;s:15:"onlyAuthService";i:0;s:12:"updatePasswd";i:1;}}',
@@ -39,7 +40,6 @@ return [
             'TYPO3\CMS\Install\Updates\BackendUserStartModuleUpdate' => 1,
             'TYPO3\CMS\Install\Updates\Compatibility6ExtractionUpdate' => 1,
             'TYPO3\CMS\Install\Updates\ContentTypesToTextMediaUpdate' => 1,
-            'TYPO3\CMS\Install\Updates\ExtensionManagerTables' => 1,
             'TYPO3\CMS\Install\Updates\FileListIsStartModuleUpdate' => 1,
             'TYPO3\CMS\Install\Updates\FilesReplacePermissionUpdate' => 1,
             'TYPO3\CMS\Install\Updates\LanguageIsoCodeUpdate' => 1,
