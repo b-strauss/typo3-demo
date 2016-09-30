@@ -17,7 +17,7 @@ switch (getenv('TYPO3_CONTEXT')) {
     // install tool password
     $GLOBALS['TYPO3_CONF_VARS']['BE']['installToolPassword'] = md5('install');
 
-    switch ($_SERVER['SERVER_NAME']) {
+    switch ($_SERVER['HTTP_HOST']) {
       case 'typo3-demo.b-strauss.local':
         // openssl fix
         $GLOBALS['TYPO3_CONF_VARS']['SYS']['binSetup'] = 'openssl="C:/OpenSSL-Win64/bin/openssl.exe"';
