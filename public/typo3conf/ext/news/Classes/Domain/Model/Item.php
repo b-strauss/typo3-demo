@@ -19,11 +19,11 @@ class Item extends AbstractItem {
    */
   protected $text;
 
-  ///**
-  // * @var \TYPO3\CMS\Extbase\Domain\Model\FileReference
-  // */
-  //protected $image;
-  //
+  /**
+   * @var \TYPO3\CMS\Extbase\Domain\Model\FileReference
+   */
+  protected $image;
+
   ///**
   // * @var string
   // */
@@ -69,5 +69,19 @@ class Item extends AbstractItem {
    */
   public function setText($text) {
     $this->text = $text;
+  }
+
+  /**
+   * @return \TYPO3\CMS\Extbase\Domain\Model\FileReference
+   */
+  public function getImage() {
+    return $this->image;
+  }
+
+  /**
+   * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $image
+   */
+  public function setImage($image) {
+    $this->image = $image;
   }
 }
