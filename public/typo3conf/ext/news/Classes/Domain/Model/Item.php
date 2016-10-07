@@ -29,6 +29,11 @@ class Item extends AbstractItem {
    */
   protected $inverted;
 
+  /**
+   * @var string
+   */
+  protected $size;
+
   ///**
   // * @var string
   // */
@@ -102,5 +107,19 @@ class Item extends AbstractItem {
    */
   public function setInverted($inverted) {
     $this->inverted = $inverted;
+  }
+
+  /**
+   * @return string
+   */
+  public function getSize() {
+    return $this->size;
+  }
+
+  /**
+   * @param string $size
+   */
+  public function setSize($size) {
+    $this->size = $size;
   }
 }

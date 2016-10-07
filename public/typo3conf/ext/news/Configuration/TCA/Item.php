@@ -24,6 +24,24 @@ $newsItem
         'inverted',
         'LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:tx_typo3demo_news_domain_model_item.inverted'
     )
+    ->addRadioButtons(
+        'size',
+        'LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:tx_typo3demo_news_domain_model_item.size',
+        [
+            [
+                'LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:tx_typo3demo_news_domain_model_item.size.small',
+                's',
+            ],
+            [
+                'LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:tx_typo3demo_news_domain_model_item.size.medium',
+                'm',
+            ],
+            [
+                'LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:tx_typo3demo_news_domain_model_item.size.large',
+                'l',
+            ],
+        ]
+    )
     ->addImage(
         'image',
         'LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:tx_typo3demo_news_domain_model_item.image'
