@@ -20,6 +20,7 @@ CREATE TABLE tx_typo3demo_news_domain_model_item (
   # custom fields
   title            VARCHAR(255)     NOT NULL DEFAULT '',
   text             text             NOT NULL,
-  image            INT(11) unsigned NOT NULL DEFAULT '0'
+  image            INT(11) unsigned NOT NULL DEFAULT '0',
+  inverted         TINYINT(4)       NOT NULL DEFAULT '0'
 #   link        text DEFAULT ''         NOT NULL
 );

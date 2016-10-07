@@ -24,6 +24,11 @@ class Item extends AbstractItem {
    */
   protected $image;
 
+  /**
+   * @var boolean
+   */
+  protected $inverted;
+
   ///**
   // * @var string
   // */
@@ -83,5 +88,19 @@ class Item extends AbstractItem {
    */
   public function setImage($image) {
     $this->image = $image;
+  }
+
+  /**
+   * @return boolean
+   */
+  public function isInverted() {
+    return $this->inverted;
+  }
+
+  /**
+   * @param boolean $inverted
+   */
+  public function setInverted($inverted) {
+    $this->inverted = $inverted;
   }
 }

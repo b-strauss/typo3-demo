@@ -23,6 +23,9 @@
       <trans-unit id="tx_typo3demo_news_domain_model_item.text" xml:space="preserve">
         <source>Text</source>
       </trans-unit>
+      <trans-unit id="tx_typo3demo_news_domain_model_item.inverted" xml:space="preserve">
+        <source>Inverted</source>
+      </trans-unit>
       <trans-unit id="tx_typo3demo_news_domain_model_item.image" xml:space="preserve">
         <source>Image</source>
       </trans-unit>

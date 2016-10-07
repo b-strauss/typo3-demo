@@ -20,6 +20,10 @@ $newsItem
         'LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:tx_typo3demo_news_domain_model_item.text',
         'required'
     )
+    ->addCheckbox(
+        'inverted',
+        'LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:tx_typo3demo_news_domain_model_item.inverted'
+    )
     ->addImage(
         'image',
         'LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:tx_typo3demo_news_domain_model_item.image'
