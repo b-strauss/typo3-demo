@@ -22,6 +22,7 @@ CREATE TABLE tx_typo3demo_news_domain_model_item (
   text             text             NOT NULL,
   inverted         TINYINT(4)       NOT NULL DEFAULT '0',
   size             VARCHAR(255)     NOT NULL DEFAULT '',
+  color            VARCHAR(255)     NOT NULL DEFAULT '',
   image            INT(11) unsigned NOT NULL DEFAULT '0'
 #   link        text DEFAULT ''         NOT NULL
 );

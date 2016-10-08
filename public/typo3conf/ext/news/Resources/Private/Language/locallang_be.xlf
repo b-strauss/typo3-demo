@@ -38,6 +38,18 @@
       <trans-unit id="tx_typo3demo_news_domain_model_item.size.large" xml:space="preserve">
         <source>Large</source>
       </trans-unit>
+      <trans-unit id="tx_typo3demo_news_domain_model_item.color" xml:space="preserve">
+        <source>Size</source>
+      </trans-unit>
+      <trans-unit id="tx_typo3demo_news_domain_model_item.color.red" xml:space="preserve">
+        <source>Red</source>
+      </trans-unit>
+      <trans-unit id="tx_typo3demo_news_domain_model_item.color.green" xml:space="preserve">
+        <source>Green</source>
+      </trans-unit>
+      <trans-unit id="tx_typo3demo_news_domain_model_item.color.blue" xml:space="preserve">
+        <source>Blue</source>
+      </trans-unit>
       <trans-unit id="tx_typo3demo_news_domain_model_item.image" xml:space="preserve">
         <source>Image</source>
       </trans-unit>

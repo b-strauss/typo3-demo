@@ -42,6 +42,24 @@ $newsItem
             ],
         ]
     )
+    ->addSelect(
+        'color',
+        'LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:tx_typo3demo_news_domain_model_item.color',
+        [
+            [
+                'LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:tx_typo3demo_news_domain_model_item.color.red',
+                'red',
+            ],
+            [
+                'LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:tx_typo3demo_news_domain_model_item.color.green',
+                'green',
+            ],
+            [
+                'LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:tx_typo3demo_news_domain_model_item.color.blue',
+                'blue',
+            ],
+        ]
+    )
     ->addImage(
         'image',
         'LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:tx_typo3demo_news_domain_model_item.image'
