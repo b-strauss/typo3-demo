@@ -30,6 +30,9 @@ FIRST_INSTALL
 # Ignore temp directory
 /public/typo3temp/
 
+# Ignore l10n directory
+/public/typo3conf/l10n/
+
 # Ignore typo3 extensions installed with composer
 /public/typo3conf/ext/realurl/
 /public/typo3conf/ext/vhs/
