@@ -1,58 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.0">
-  <file source-language="en" datatype="plaintext">
+  <file source-language="en" target-language="de" datatype="plaintext">
     <header/>
     <body>
       <trans-unit id="plugin_title" xml:space="preserve">
         <source>News article</source>
+        <target>News Artikel</target>
       </trans-unit>
       <trans-unit id="plugin_description" xml:space="preserve">
         <source>Renders one or more news articles</source>
+        <target>Rendert ein oder mehrere News Artikel</target>
       </trans-unit>
       <trans-unit id="flexform.category" xml:space="preserve">
         <source>Category</source>
+        <target>Kategorie</target>
       </trans-unit>
       <trans-unit id="flexform.items" xml:space="preserve">
         <source>News items</source>
+        <target>News Element</target>
       </trans-unit>
       <trans-unit id="tx_typo3demo_news_domain_model_item" xml:space="preserve">
         <source>News</source>
+        <target>News</target>
       </trans-unit>
       <trans-unit id="tx_typo3demo_news_domain_model_item.title" xml:space="preserve">
         <source>Title</source>
+        <target>Titel</target>
       </trans-unit>
       <trans-unit id="tx_typo3demo_news_domain_model_item.text" xml:space="preserve">
         <source>Text</source>
+        <target>Text</target>
       </trans-unit>
       <trans-unit id="tx_typo3demo_news_domain_model_item.inverted" xml:space="preserve">
         <source>Inverted</source>
+        <target>Invertiert</target>
       </trans-unit>
       <trans-unit id="tx_typo3demo_news_domain_model_item.size" xml:space="preserve">
         <source>Size</source>
+        <target>Größe</target>
       </trans-unit>
       <trans-unit id="tx_typo3demo_news_domain_model_item.size.small" xml:space="preserve">
         <source>Small</source>
+        <target>Small</target>
       </trans-unit>
       <trans-unit id="tx_typo3demo_news_domain_model_item.size.medium" xml:space="preserve">
         <source>Medium</source>
+        <target>Medium</target>
       </trans-unit>
       <trans-unit id="tx_typo3demo_news_domain_model_item.size.large" xml:space="preserve">
         <source>Large</source>
+        <target>Large</target>
       </trans-unit>
       <trans-unit id="tx_typo3demo_news_domain_model_item.color" xml:space="preserve">
         <source>Size</source>
+        <target>Größe</target>
       </trans-unit>
       <trans-unit id="tx_typo3demo_news_domain_model_item.color.red" xml:space="preserve">
         <source>Red</source>
+        <target>Rot</target>
       </trans-unit>
       <trans-unit id="tx_typo3demo_news_domain_model_item.color.green" xml:space="preserve">
         <source>Green</source>
+        <target>Grün</target>
       </trans-unit>
       <trans-unit id="tx_typo3demo_news_domain_model_item.color.blue" xml:space="preserve">
         <source>Blue</source>
+        <target>Blau</target>
       </trans-unit>
       <trans-unit id="tx_typo3demo_news_domain_model_item.image" xml:space="preserve">
         <source>Image</source>
+        <target>Bild</target>
       </trans-unit>
     </body>
   </file>
