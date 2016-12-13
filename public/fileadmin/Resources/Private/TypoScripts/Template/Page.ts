@@ -1,7 +1,7 @@
 # documentation: https://docs.typo3.org/typo3cms/TyposcriptReference/7.6/Setup/Page/
 page = PAGE
 page {
-  shortcutIcon = fileadmin/Resources/Public/Images/favicon/favicon.ico
+  shortcutIcon = fileadmin/Resources/Public/Images/favicon.png
 
   bodyTagCObject = TEXT
   bodyTagCObject.field = uid
@@ -55,9 +55,15 @@ page {
     # device config
     50 = TEXT
     50.value (
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
       <meta name="msapplication-tap-highlight" content="no">
-      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+      <style>
+        @-ms-viewport
+        {
+          width: device-width;
+        }
+      </style>
     )
 
     # browser version check: https://browser-update.org/
