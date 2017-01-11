@@ -59,16 +59,21 @@ page {
       <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
       <meta name="msapplication-tap-highlight" content="no">
       <style>
-        @-ms-viewport
-        {
+        @-ms-viewport {
           width: device-width;
         }
       </style>
     )
 
-    # browser version check: https://browser-update.org/
+    # polyfill.io: https://polyfill.io/
     60 = TEXT
     60.value (
+      <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+    )
+
+    # browser version check: https://browser-update.org/
+    70 = TEXT
+    70.value (
       <script>
         var $buoop = {vs: {i: 10, f: -4, o: -4, s: 8, c: -4}, c: 4};
         function $buo_f() {
