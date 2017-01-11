@@ -25,12 +25,12 @@ switch (getenv('TYPO3_CONTEXT')) {
         // image processing
         $GLOBALS['TYPO3_CONF_VARS']['GFX']['image_processing'] = '1';
         $GLOBALS['TYPO3_CONF_VARS']['GFX']['im'] = '1';
-        $GLOBALS['TYPO3_CONF_VARS']['GFX']['im_path'] = 'C:/Program Files/ImageMagick-6.9.3-Q16/';
-        $GLOBALS['TYPO3_CONF_VARS']['GFX']['im_path_lzw'] = 'C:/Program Files/ImageMagick-6.9.3-Q16/';
-        $GLOBALS['TYPO3_CONF_VARS']['GFX']['im_version_5'] = 'im6';
+        $GLOBALS['TYPO3_CONF_VARS']['GFX']['im_path'] = 'C:/Program Files/GraphicsMagick-1.3.25-Q16/';
+        $GLOBALS['TYPO3_CONF_VARS']['GFX']['im_path_lzw'] = 'C:/Program Files/GraphicsMagick-1.3.25-Q16/';
+        $GLOBALS['TYPO3_CONF_VARS']['GFX']['im_version_5'] = 'gm';
         $GLOBALS['TYPO3_CONF_VARS']['GFX']['im_v5effects'] = '0';
         $GLOBALS['TYPO3_CONF_VARS']['GFX']['im_mask_temp_ext_gif'] = '1';
-        $GLOBALS['TYPO3_CONF_VARS']['GFX']['colorspace'] = 'sRGB';
+        $GLOBALS['TYPO3_CONF_VARS']['GFX']['colorspace'] = 'RGB';
 
         // database options
         $GLOBALS['TYPO3_CONF_VARS']['DB']['host'] = 'localhost';
