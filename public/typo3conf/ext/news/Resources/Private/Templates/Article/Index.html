@@ -4,11 +4,13 @@
   <h2>{category}</h2>
   <ul>
     <f:for each="{items}" as="item">
+
       <ng:render path="fileadmin/Resources/Public/Components/Article/Article.html">
         <ng:slot name="header">{item.title}</ng:slot>
         <ng:slot name="main">{item.text}</ng:slot>
         <ng:slot name="footer">Copyright 2017</ng:slot>
       </ng:render>
+
     </f:for>
   </ul>
 </section>
