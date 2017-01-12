@@ -36,3 +36,9 @@ FIRST_INSTALL
 # Ignore typo3 extensions installed with composer
 /public/typo3conf/ext/realurl/
 /public/typo3conf/ext/vhs/
+
+# Ignore javascript files
+/public/fileadmin/Resources/Public/JavaScripts/node_modules/
+/public/fileadmin/Resources/Public/JavaScripts/app-deps.js
+/public/fileadmin/Resources/Public/JavaScripts/app.min.js
+/public/fileadmin/Resources/Public/JavaScripts/app.min.js.map

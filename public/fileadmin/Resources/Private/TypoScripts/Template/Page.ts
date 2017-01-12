@@ -88,21 +88,34 @@ page {
         }
       </script>
     )
+
+    # css
+    80 = TEXT
+    80.value (
+      <link rel="stylesheet" href="fileadmin/Resources/Public/JavaScripts/node_modules/swiper/dist/css/swiper.min.css">
+    )
+
+    # js
+    90 = TEXT
+    90.value (
+      <script src="fileadmin/Resources/Public/JavaScripts/node_modules/systemjs/dist/system.js" defer></script>
+      <script src="fileadmin/Resources/Public/JavaScripts/app.min.js" defer></script>
+    )
   }
 
   #  includeCSS {
-#    core = ./fileadmin/Resources/Public/StyleSheets/core.css
-#    core.media = screen
-#
-#    layout = ./fileadmin/Resources/Public/StyleSheets/layout.css
-#    layout.media = screen
-#
-#    extension = ./fileadmin/Resources/Public/StyleSheets/extension.css
-#    extension.media = screen
-#
-#    rte = ./fileadmin/Resources/Public/StyleSheets/rte.css
-#    rte.media = screen
-#  }
+  #    core = ./fileadmin/Resources/Public/StyleSheets/core.css
+  #    core.media = screen
+  #
+  #    layout = ./fileadmin/Resources/Public/StyleSheets/layout.css
+  #    layout.media = screen
+  #
+  #    extension = ./fileadmin/Resources/Public/StyleSheets/extension.css
+  #    extension.media = screen
+  #
+  #    rte = ./fileadmin/Resources/Public/StyleSheets/rte.css
+  #    rte.media = screen
+  #  }
 
   # documentation: https://docs.typo3.org/typo3cms/TyposcriptReference/7.6/ContentObjects/Fluidtemplate/
   10 = FLUIDTEMPLATE
@@ -130,55 +143,35 @@ page {
   }
 }
 
-#page.includeCSS {
-#  swiper = ./fileadmin/Resources/Public/Javascript/third-party/swiper/swiper.min.css
-#  swiper.media = all
-#}
-#
-#page.includeJS {
-#  10 = ./fileadmin/Resources/Public/Javascript/third-party/modernizr.js
-#  11 = ./fileadmin/Resources/Public/Javascript/third-party/swiper/swiper.min.js
-#  12 = ./fileadmin/Resources/Public/Javascript/third-party/picturefill/picturefill.min.js
-#  13 = ./fileadmin/Resources/Public/Javascript/third-party/greensock/TweenMax.min.js
-#  14 = ./fileadmin/Resources/Public/Javascript/third-party/greensock/plugins/ScrollToPlugin.min.js
-#}
-
-#page.includeJSFooterlibs {
-#  10 = ./fileadmin/Resources/Public/Javascript/application-min.js
-#}
-
-#page.footerData {
-#  10 = TEXT
-#  10.value = <script type="text/javascript">ce.bootstrap();</script>
-#}
-
 [globalString = ENV:TYPO3_CONTEXT = Development]
-#  page.includeCSS.swiper >
-#  page.includeCSS {
-#    swiper = ./fileadmin/Resources/Public/Javascript/third-party/swiper/swiper.css
-#    swiper.media = all
-#  }
-#
-#  page.includeJS >
-#  page.includeJS {
-#    10 = ./fileadmin/Resources/Public/Javascript/third-party/modernizr.js
-#    11 = ./fileadmin/Resources/Public/Javascript/third-party/swiper/swiper.js
-#    12 = ./fileadmin/Resources/Public/Javascript/third-party/picturefill/picturefill.js
-#    13 = ./fileadmin/Resources/Public/Javascript/third-party/greensock/TweenMax.js
-#    14 = ./fileadmin/Resources/Public/Javascript/third-party/greensock/plugins/ScrollToPlugin.js
-#  }
-#
-#  page.includeJSFooterlibs >
-#  page.includeJSFooterlibs {
-#    10 = ./fileadmin/Resources/Public/Javascript/closure-library/closure/goog/base.js
-#    20 = ./fileadmin/Resources/Public/Javascript/ce-deps.js
-#  }
-#
-#  page.footerData >
-#  page.footerData {
-#    10 = TEXT
-#    10.value = <script type="text/javascript">goog.require('ce.Application');</script>
-#    20 = TEXT
-#    20.value = <script type="text/javascript">ce.bootstrap();</script>
-#  }
+  page {
+    headerData {
+      # css
+      80 >
+      80 = TEXT
+      80.value (
+        <link rel="stylesheet" href="fileadmin/Resources/Public/JavaScripts/node_modules/swiper/dist/css/swiper.css">
+      )
+
+      # js
+      90 >
+      90 = TEXT
+      90.value (
+        <script src="fileadmin/Resources/Public/JavaScripts/node_modules/systemjs/dist/system.js"></script>
+      )
+    }
+
+    footerData {
+      # closure uncompiled js
+      10 >
+      10 = TEXT
+      10.value (
+        <script src="fileadmin/Resources/Public/JavaScripts/node_modules/google-closure-library/closure/goog/base.js"></script>
+        <script src="fileadmin/Resources/Public/JavaScripts/app-deps.js"></script>
+        <script>
+          goog.require('t3demo.App');
+        </script>
+      )
+    }
+  }
 [global]

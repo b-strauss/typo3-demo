@@ -1,0 +1,12 @@
+{
+  "name": "t3demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "typo3 demo project",
+  "dependencies": {
+    "google-closure-library": "v20161201.0.0",
+    "picturefill": "3.0.2",
+    "swiper": "3.4.1",
+    "systemjs": "0.19.41"
+  }
+}

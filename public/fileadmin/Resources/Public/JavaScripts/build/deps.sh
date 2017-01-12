@@ -1,0 +1,1 @@
+sed 's/\^/\\/' deps.bat > unix.deps.sh && sh unix.deps.sh
