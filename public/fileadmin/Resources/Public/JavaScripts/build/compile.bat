@@ -1,4 +1,4 @@
-java -jar closure-compiler-v20161201.jar^
+java -jar closure-compiler-v20161024.jar^
  --js="..\node_modules\google-closure-library\closure\goog\**.js"^
  --js="!..\node_modules\google-closure-library\closure\goog\**_test.js"^
  --js="..\src\clulib\lib\**.js"^

@@ -20,7 +20,7 @@ t3demo.App = function () {
   this.manager_.addComponentMap(t3demo.components.collection);
 
   SystemJS.config({
-    baseURL: '/fileadmin/Resources/Public/JavaScripts'
+    baseURL: 'fileadmin/Resources/Public/JavaScripts'
   });
 };
 
