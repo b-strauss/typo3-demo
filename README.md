@@ -5,6 +5,7 @@
 - git
 - composer
 - mysql
+- nodejs
 
 ## Installing
 
@@ -32,3 +33,7 @@ If you still get an error, try setting git to `git config core.longpaths true`.
 ### Database
 
 Use `utf8_unicode_ci` collation
+
+### JavaScript
+
+- run `npm install` from `public/fileadmin/Resources/Public/JavaScripts`
