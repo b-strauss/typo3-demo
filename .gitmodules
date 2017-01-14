@@ -1,6 +1,3 @@
 [submodule "public/typo3conf/ext/engine"]
 	path = public/typo3conf/ext/engine
 	url = git@github.com:b-strauss/engine.git
-[submodule "public/fileadmin/Resources/Public/JavaScripts/src/clulib"]
-	path = public/fileadmin/Resources/Public/JavaScripts/src/clulib
-	url = git@github.com:b-strauss/clulib.git
