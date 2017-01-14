@@ -42,3 +42,8 @@ FIRST_INSTALL
 /public/fileadmin/Resources/Public/JavaScripts/app-deps.js
 /public/fileadmin/Resources/Public/JavaScripts/app.min.js
 /public/fileadmin/Resources/Public/JavaScripts/app.min.js.map
+
+# Ignore css files
+/public/fileadmin/Resources/Public/Scss/.sass-cache/
+/public/fileadmin/Resources/Public/StyleSheets/app.css
+/public/fileadmin/Resources/Public/StyleSheets/app.css.map

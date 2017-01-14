@@ -92,7 +92,8 @@ page {
     # css
     80 = TEXT
     80.value (
-      <link rel="stylesheet" href="fileadmin/Resources/Public/JavaScripts/node_modules/swiper/dist/css/swiper.min.css">
+      <link rel="stylesheet" media="screen" href="fileadmin/Resources/Public/JavaScripts/node_modules/swiper/dist/css/swiper.min.css">
+      <link rel="stylesheet" media="screen" href="fileadmin/Resources/Public/StyleSheets/app.css">
     )
 
     # js
@@ -102,20 +103,6 @@ page {
       <script src="fileadmin/Resources/Public/JavaScripts/app.min.js" defer></script>
     )
   }
-
-  #  includeCSS {
-  #    core = ./fileadmin/Resources/Public/StyleSheets/core.css
-  #    core.media = screen
-  #
-  #    layout = ./fileadmin/Resources/Public/StyleSheets/layout.css
-  #    layout.media = screen
-  #
-  #    extension = ./fileadmin/Resources/Public/StyleSheets/extension.css
-  #    extension.media = screen
-  #
-  #    rte = ./fileadmin/Resources/Public/StyleSheets/rte.css
-  #    rte.media = screen
-  #  }
 
   # documentation: https://docs.typo3.org/typo3cms/TyposcriptReference/7.6/ContentObjects/Fluidtemplate/
   10 = FLUIDTEMPLATE
@@ -150,7 +137,8 @@ page {
       80 >
       80 = TEXT
       80.value (
-        <link rel="stylesheet" href="fileadmin/Resources/Public/JavaScripts/node_modules/swiper/dist/css/swiper.css">
+        <link rel="stylesheet" media="screen" href="fileadmin/Resources/Public/JavaScripts/node_modules/swiper/dist/css/swiper.css">
+        <link rel="stylesheet" media="screen" href="fileadmin/Resources/Public/StyleSheets/app.css">
       )
 
       # js
