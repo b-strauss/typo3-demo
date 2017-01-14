@@ -40,7 +40,7 @@
         <source>Large</source>
       </trans-unit>
       <trans-unit id="tx_typo3demo_news_domain_model_item.color" xml:space="preserve">
-        <source>Size</source>
+        <source>Color</source>
       </trans-unit>
       <trans-unit id="tx_typo3demo_news_domain_model_item.color.red" xml:space="preserve">
         <source>Red</source>
