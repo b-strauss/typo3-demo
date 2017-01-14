@@ -1,13 +1,13 @@
 .t3demo-article {
-  & > header {
+  header {
     background-color: lightcoral;
   }
 
-  & > main {
+  main {
     background-color: lightgreen;
   }
 
-  & > footer {
+  footer {
     background-color: lightyellow;
   }
 }

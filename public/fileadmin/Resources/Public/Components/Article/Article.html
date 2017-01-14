@@ -1,5 +1,7 @@
 <article class="t3demo-article" data-cmp="t3demo-article">
   <header>{slot-header}</header>
   <main>{slot-main}</main>
-  <footer>{slot-footer}</footer>
+  <footer>
+    <f:format.raw>{slot-footer}</f:format.raw>
+  </footer>
 </article>

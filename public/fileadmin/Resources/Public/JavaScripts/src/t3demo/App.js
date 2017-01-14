@@ -1,7 +1,6 @@
 goog.provide('t3demo.App');
 
 goog.require('clulib.cm.ComponentManager');
-goog.require('clulib.ui.components');
 
 goog.require('t3demo.net.libs');
 goog.require('t3demo.components');
@@ -16,7 +15,6 @@ t3demo.App = function () {
    */
   this.manager_ = new clulib.cm.ComponentManager();
 
-  this.manager_.addComponentMap(clulib.ui.components.collection);
   this.manager_.addComponentMap(t3demo.components.collection);
 
   SystemJS.config({
