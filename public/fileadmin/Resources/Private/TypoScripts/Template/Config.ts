@@ -4,6 +4,8 @@ config {
   admPanel.enable.preview = 0
   admPanel.hide = 0
   baseURL = {$config.baseURL}
+  compressJs = 1
+  compressCss = 1
   disableImgBorderAttr = 1
   disablePrefixComment = 1
   extTarget = _blank
