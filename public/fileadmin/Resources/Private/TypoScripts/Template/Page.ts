@@ -130,7 +130,8 @@ page {
   }
 }
 
-[globalString = ENV:TYPO3_CONTEXT = Development]
+# only load uncompiled if get param prod=1
+[globalString = ENV:TYPO3_CONTEXT = Development] && [globalVar = GP:prod = 0, GP:prod =]
   page {
     headerData {
       # css
