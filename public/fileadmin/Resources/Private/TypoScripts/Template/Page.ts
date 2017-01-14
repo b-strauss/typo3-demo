@@ -52,7 +52,7 @@ page {
       }
     }
 
-    # device config
+    # meta misc
     50 = TEXT
     50.value (
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -63,6 +63,7 @@ page {
           width: device-width;
         }
       </style>
+      <link rel="icon" href="fileadmin/Resources/Public/Images/favicon.png">
     )
 
     # polyfill.io: https://polyfill.io/
