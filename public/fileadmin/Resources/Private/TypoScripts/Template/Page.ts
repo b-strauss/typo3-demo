@@ -52,7 +52,7 @@ page {
       }
     }
 
-    # meta misc
+    # meta devices
     # favicon generator: http://realfavicongenerator.net/
     50 = TEXT
     50.value (
@@ -139,7 +139,7 @@ page {
   }
 }
 
-# only load uncompiled if get param prod=1
+# only load uncompiled if get param prod=0 or not present
 [globalString = ENV:TYPO3_CONTEXT = Development] && [globalVar = GP:prod = 0, GP:prod =]
   page {
     headerData {
