@@ -1,7 +1,7 @@
 java -jar closure-compiler-v20161024.jar^
  --js="..\node_modules\google-closure-library\closure\goog\**.js"^
  --js="!..\node_modules\google-closure-library\closure\goog\**_test.js"^
- --js="..\src\clulib\lib\**.js"^
+ --js="..\node_modules\clulib\lib\**.js"^
  --js="..\src\t3demo\**.js"^
  --js="..\..\Components\**.js"^
  --entry_point="t3demo.App"^
@@ -10,9 +10,9 @@ java -jar closure-compiler-v20161024.jar^
  --compilation_level="ADVANCED"^
  --warning_level="VERBOSE"^
  --define="goog.DEBUG=false"^
- --externs=".\closure-externs\picturefill\picturefill-3.0.2.js"^
- --externs=".\closure-externs\swiper\swiper-3.4.1.js"^
- --externs=".\closure-externs\systemjs\systemjs-0.19.41.js"^
+ --externs="..\node_modules\externs\picturefill\picturefill-3.0.2.js"^
+ --externs="..\node_modules\externs\swiper\swiper-3.4.1.js"^
+ --externs="..\node_modules\externs\systemjs\systemjs-0.19.41.js"^
  --create_source_map="..\app.min.js.map"^
  --source_map_location_mapping="../|fileadmin/Resources/Public/JavaScripts"^
  --assume_function_wrapper="true"^
