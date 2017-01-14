@@ -139,8 +139,8 @@ page {
   }
 }
 
-# only load uncompiled if get param prod=0 or not present
-[globalString = ENV:TYPO3_CONTEXT = Development] && [globalVar = GP:prod = 0, GP:prod =]
+# only load uncompiled in Development mode if get param prod=0 or not present
+[applicationContext = Development] && [globalVar = GP:prod = 0, GP:prod =]
   page {
     headerData {
       # css
@@ -161,7 +161,6 @@ page {
 
     footerData {
       # closure uncompiled js
-      10 >
       10 = TEXT
       10.value (
         <script src="fileadmin/Resources/Public/JavaScripts/node_modules/google-closure-library/closure/goog/base.js"></script>

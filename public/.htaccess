@@ -231,7 +231,7 @@ AddEncoding gzip .gzip
   # the core directives.
   #
   # https://httpd.apache.org/docs/current/mod/mod_filter.html#addoutputfilterbytype
-  # <IfModule mod_filter.c>
+  <IfModule mod_filter.c>
     AddOutputFilterByType DEFLATE "application/atom+xml" \
                                   "application/javascript" \
                                   "application/json" \
@@ -264,7 +264,7 @@ AddEncoding gzip .gzip
                                   "text/x-component" \
                                   "text/x-cross-domain-policy" \
                                   "text/xml"
-  # </IfModule>
+  </IfModule>
 
   # Map the following filename extensions to the specified
   # encoding type in order to make Apache serve the file types
