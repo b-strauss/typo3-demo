@@ -4,6 +4,3 @@
 [submodule "public/fileadmin/Resources/Public/JavaScripts/src/clulib"]
 	path = public/fileadmin/Resources/Public/JavaScripts/src/clulib
 	url = git@github.com:b-strauss/clulib.git
-[submodule "public/fileadmin/Resources/Public/JavaScripts/build/closure-externs"]
-	path = public/fileadmin/Resources/Public/JavaScripts/build/closure-externs
-	url = git@github.com:b-strauss/closure-externs.git
