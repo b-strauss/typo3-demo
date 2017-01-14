@@ -53,6 +53,7 @@ page {
     }
 
     # meta misc
+    # favicon generator: http://realfavicongenerator.net/
     50 = TEXT
     50.value (
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -63,7 +64,14 @@ page {
           width: device-width;
         }
       </style>
-      <link rel="icon" href="fileadmin/Resources/Public/Images/favicon.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="fileadmin/Resources/Public/Images/Favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" href="fileadmin/Resources/Public/Images/Favicon/favicon-32x32.png" sizes="32x32">
+      <link rel="icon" type="image/png" href="fileadmin/Resources/Public/Images/Favicon/favicon-16x16.png" sizes="16x16">
+      <link rel="manifest" href="fileadmin/Resources/Public/Images/Favicon/manifest.json">
+      <link rel="mask-icon" href="fileadmin/Resources/Public/Images/Favicon/safari-pinned-tab.svg" color="#ff8700">
+      <link rel="shortcut icon" href="fileadmin/Resources/Public/Images/Favicon/favicon.ico">
+      <meta name="msapplication-config" content="fileadmin/Resources/Public/Images/Favicon/browserconfig.xml">
+      <meta name="theme-color" content="#ff8700">
     )
 
     # polyfill.io: https://polyfill.io/
