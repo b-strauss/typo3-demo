@@ -52,8 +52,7 @@ page {
       }
     }
 
-    # meta devices
-    # favicon generator: http://realfavicongenerator.net/
+    # device config
     50 = TEXT
     50.value (
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -64,6 +63,12 @@ page {
           width: device-width;
         }
       </style>
+    )
+
+    # favicons
+    # generator: http://realfavicongenerator.net/
+    60 = TEXT
+    60.value (
       <link rel="apple-touch-icon" sizes="180x180" href="fileadmin/Resources/Public/Images/Favicon/apple-touch-icon.png">
       <link rel="icon" type="image/png" href="fileadmin/Resources/Public/Images/Favicon/favicon-32x32.png" sizes="32x32">
       <link rel="icon" type="image/png" href="fileadmin/Resources/Public/Images/Favicon/favicon-16x16.png" sizes="16x16">
@@ -75,14 +80,14 @@ page {
     )
 
     # polyfill.io: https://polyfill.io/
-    60 = TEXT
-    60.value (
+    70 = TEXT
+    70.value (
       <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
     )
 
     # browser version check: https://browser-update.org/
-    70 = TEXT
-    70.value (
+    80 = TEXT
+    80.value (
       <script>
         var $buoop = {vs: {i: 10, f: -4, o: -4, s: 8, c: -4}, c: 4};
         function $buo_f() {
