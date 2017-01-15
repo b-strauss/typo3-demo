@@ -1,8 +1,6 @@
 # documentation: https://docs.typo3.org/typo3cms/TyposcriptReference/7.6/Setup/Page/
 page = PAGE
 page {
-  shortcutIcon = fileadmin/Resources/Public/Images/favicon.png
-
   bodyTagCObject = TEXT
   bodyTagCObject.field = uid
   bodyTagCObject.wrap = <body id="page-|">
