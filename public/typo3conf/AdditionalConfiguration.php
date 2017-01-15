@@ -20,6 +20,13 @@ switch (getenv('TYPO3_CONTEXT')) {
     // install tool password
     $GLOBALS['TYPO3_CONF_VARS']['BE']['installToolPassword'] = md5('install');
 
+    // database options
+    $GLOBALS['TYPO3_CONF_VARS']['DB']['host'] = 'localhost';
+    $GLOBALS['TYPO3_CONF_VARS']['DB']['port'] = 3306;
+    $GLOBALS['TYPO3_CONF_VARS']['DB']['database'] = 'typo3-demo-db';
+    $GLOBALS['TYPO3_CONF_VARS']['DB']['username'] = 'typo3-user';
+    $GLOBALS['TYPO3_CONF_VARS']['DB']['password'] = 'typo3-pw';
+
     switch ($_SERVER['HTTP_HOST']) {
       case 'typo3-demo.b-strauss.local':
         // openssl fix
@@ -35,12 +42,6 @@ switch (getenv('TYPO3_CONTEXT')) {
         $GLOBALS['TYPO3_CONF_VARS']['GFX']['im_mask_temp_ext_gif'] = '1';
         $GLOBALS['TYPO3_CONF_VARS']['GFX']['colorspace'] = 'RGB';
 
-        // database options
-        $GLOBALS['TYPO3_CONF_VARS']['DB']['host'] = 'localhost';
-        $GLOBALS['TYPO3_CONF_VARS']['DB']['port'] = 3306;
-        $GLOBALS['TYPO3_CONF_VARS']['DB']['database'] = 'typo3-demo-db';
-        $GLOBALS['TYPO3_CONF_VARS']['DB']['username'] = 'typo3-user';
-        $GLOBALS['TYPO3_CONF_VARS']['DB']['password'] = 'typo3-pw';
         break;
 
       case 'typo3-demo.nb160a.emp.nb':
@@ -57,12 +58,6 @@ switch (getenv('TYPO3_CONTEXT')) {
         $GLOBALS['TYPO3_CONF_VARS']['GFX']['im_mask_temp_ext_gif'] = '1';
         $GLOBALS['TYPO3_CONF_VARS']['GFX']['colorspace'] = 'RGB';
 
-        // database options
-        $GLOBALS['TYPO3_CONF_VARS']['DB']['host'] = 'localhost';
-        $GLOBALS['TYPO3_CONF_VARS']['DB']['port'] = 3306;
-        $GLOBALS['TYPO3_CONF_VARS']['DB']['database'] = 'typo3-demo-db';
-        $GLOBALS['TYPO3_CONF_VARS']['DB']['username'] = 'typo3-user';
-        $GLOBALS['TYPO3_CONF_VARS']['DB']['password'] = 'typo3-pw';
         break;
     }
     break;
