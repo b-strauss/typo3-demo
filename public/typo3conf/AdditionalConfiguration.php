@@ -1,5 +1,8 @@
 <?php
 
+$GLOBALS['TYPO3_CONF_VARS']['BE']['compressionLevel'] = 9;
+$GLOBALS['TYPO3_CONF_VARS']['FE']['compressionLevel'] = 9;
+
 switch (getenv('TYPO3_CONTEXT')) {
   case 'Development':
     // debug options
@@ -65,12 +68,8 @@ switch (getenv('TYPO3_CONTEXT')) {
     break;
 
   case 'Production/Staging':
-    $GLOBALS['TYPO3_CONF_VARS']['BE']['compressionLevel'] = 9;
-    $GLOBALS['TYPO3_CONF_VARS']['FE']['compressionLevel'] = 9;
     break;
 
   case 'Production':
-    $GLOBALS['TYPO3_CONF_VARS']['BE']['compressionLevel'] = 9;
-    $GLOBALS['TYPO3_CONF_VARS']['FE']['compressionLevel'] = 9;
     break;
 }
