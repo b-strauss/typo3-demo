@@ -97,20 +97,21 @@ page {
         }
       </script>
     )
+  }
 
-    # css
-    80 = TEXT
-    80.value (
-      <link rel="stylesheet" media="screen" href="fileadmin/Resources/Public/JavaScripts/node_modules/swiper/dist/css/swiper.min.css">
-      <link rel="stylesheet" media="screen" href="fileadmin/Resources/Public/StyleSheets/app.css">
-    )
+  # css
+  includeCSS {
+    swiper = fileadmin/Resources/Public/JavaScripts/node_modules/swiper/dist/css/swiper.min.css
+    swiper.media = screen
 
-    # js
-    90 = TEXT
-    90.value (
-      <script src="fileadmin/Resources/Public/JavaScripts/node_modules/systemjs/dist/system.js" defer></script>
-      <script src="fileadmin/Resources/Public/JavaScripts/app.min.js" defer></script>
-    )
+    app = fileadmin/Resources/Public/StyleSheets/app.css
+    app.media = screen
+  }
+
+  # js
+  includeJSFooter {
+    systemjs = fileadmin/Resources/Public/JavaScripts/node_modules/systemjs/dist/system.js
+    app = fileadmin/Resources/Public/JavaScripts/app.min.js
   }
 
   # documentation: https://docs.typo3.org/typo3cms/TyposcriptReference/7.6/ContentObjects/Fluidtemplate/
@@ -142,22 +143,7 @@ page {
 # only load uncompiled in Development mode if get param prod=0 or not present
 [applicationContext = Development] && [globalVar = GP:prod = 0, GP:prod =]
   page {
-    headerData {
-      # css
-      80 >
-      80 = TEXT
-      80.value (
-        <link rel="stylesheet" media="screen" href="fileadmin/Resources/Public/JavaScripts/node_modules/swiper/dist/css/swiper.css">
-        <link rel="stylesheet" media="screen" href="fileadmin/Resources/Public/StyleSheets/app.css">
-      )
-
-      # js
-      90 >
-      90 = TEXT
-      90.value (
-        <script src="fileadmin/Resources/Public/JavaScripts/node_modules/systemjs/dist/system.js"></script>
-      )
-    }
+    includeJSFooter.app >
 
     footerData {
       # closure uncompiled js
