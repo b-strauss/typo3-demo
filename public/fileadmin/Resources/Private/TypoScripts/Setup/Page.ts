@@ -78,9 +78,16 @@ page {
     )
 
     # polyfill.io: https://polyfill.io/
+    # loads sets: default-3.6, HTMLPictureElement
     70 = TEXT
     70.value (
-      <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+      <script>
+        var __isPolyfillLoaded = false;
+        function __onPolyfillLoaded () {
+          __isPolyfillLoaded = true;
+        };
+      </script>
+      <script src="https://cdn.polyfill.io/v2/polyfill.min.js?callback=__onPolyfillLoaded&features=default-3.6,HTMLPictureElement" defer></script>
     )
 
     # browser version check: https://browser-update.org/

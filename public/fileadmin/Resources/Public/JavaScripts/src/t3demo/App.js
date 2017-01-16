@@ -1,5 +1,6 @@
 goog.provide('t3demo.App');
 
+goog.require('clulib.async.Completer');
 goog.require('clulib.cm.ComponentManager');
 
 goog.require('t3demo.net.libs');
@@ -25,23 +26,25 @@ t3demo.App = function () {
 /**
  * @returns {Promise}
  */
-t3demo.App.prototype.loadDefaultLibs = function () {
-  return Promise.all([
-    t3demo.net.libs.loadPicturefill()
-  ]);
+t3demo.App.prototype.waitForPolyfills = function () {
+  if (window['__isPolyfillLoaded'] === true)
+    return Promise.resolve();
+
+  let completer = new clulib.async.Completer();
+
+  window['__onPolyfillLoaded'] = () => {
+    window['__isPolyfillLoaded'] = true;
+    window['__onPolyfillLoaded'] = null;
+    completer.resolve();
+  };
+
+  return completer.getPromise();
 };
 
 /**
- * @param {Array} libs
  * @returns {Promise}
  */
-t3demo.App.prototype.init = function (libs) {
-  /**
-   * @type {Function}
-   */
-  const picturefill = libs[0];
-  picturefill();
-
+t3demo.App.prototype.init = function () {
   return this.manager_.decorate();
 };
 
@@ -49,5 +52,5 @@ t3demo.App.prototype.init = function (libs) {
  * @type {t3demo.App}
  */
 const app = new t3demo.App();
-app.loadDefaultLibs()
-    .then(libs => app.init(libs));
+app.waitForPolyfills()
+    .then(() => app.init());
