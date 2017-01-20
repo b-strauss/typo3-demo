@@ -10,14 +10,14 @@ page {
   )
 
   headerData {
-    # page title
+    # title
     10 = TEXT
     10 {
       field = title
       wrap = <title>|</title>
     }
 
-    # meta keywords
+    # keywords
     20 = COA
     20 {
       1 = TEXT
@@ -28,7 +28,7 @@ page {
       }
     }
 
-    # meta description
+    # description
     30 = COA
     30 {
       1 = TEXT
@@ -39,7 +39,7 @@ page {
       }
     }
 
-    # meta author
+    # author
     40 = COA
     40 {
       1 = TEXT
@@ -63,24 +63,29 @@ page {
       </style>
     )
 
-    # favicons
-    # generator: http://realfavicongenerator.net/
+    # app config
     60 = TEXT
     60.value (
+      <link rel="manifest" href="fileadmin/Resources/Public/AppConfig/manifest.json">
+      <meta name="msapplication-config" content="fileadmin/Resources/Public/AppConfig/browserconfig.xml">
+      <meta name="theme-color" content="#ff8700">
+    )
+
+    # favicons
+    # generator: http://realfavicongenerator.net/
+    70 = TEXT
+    70.value (
+      <link rel="shortcut icon" href="fileadmin/Resources/Public/Images/Favicon/favicon.ico">
       <link rel="apple-touch-icon" sizes="180x180" href="fileadmin/Resources/Public/Images/Favicon/apple-touch-icon.png">
       <link rel="icon" type="image/png" href="fileadmin/Resources/Public/Images/Favicon/favicon-32x32.png" sizes="32x32">
       <link rel="icon" type="image/png" href="fileadmin/Resources/Public/Images/Favicon/favicon-16x16.png" sizes="16x16">
-      <link rel="manifest" href="fileadmin/Resources/Public/Images/Favicon/manifest.json">
       <link rel="mask-icon" href="fileadmin/Resources/Public/Images/Favicon/safari-pinned-tab.svg" color="#ff8700">
-      <link rel="shortcut icon" href="fileadmin/Resources/Public/Images/Favicon/favicon.ico">
-      <meta name="msapplication-config" content="fileadmin/Resources/Public/Images/Favicon/browserconfig.xml">
-      <meta name="theme-color" content="#ff8700">
     )
 
     # polyfill.io: https://polyfill.io/
     # loads sets: default-3.6, HTMLPictureElement
-    70 = TEXT
-    70.value (
+    80 = TEXT
+    80.value (
       <script>
         var __isPolyfillLoaded = false;
         function __onPolyfillLoaded () {
@@ -91,8 +96,8 @@ page {
     )
 
     # browser version check: https://browser-update.org/
-    80 = TEXT
-    80.value (
+    90 = TEXT
+    90.value (
       <script>
         var $buoop = {vs: {i: 10, f: -4, o: -4, s: 8, c: -4}, c: 4};
         function $buo_f() {
