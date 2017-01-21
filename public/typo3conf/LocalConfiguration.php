@@ -3,7 +3,7 @@ return [
     'BE' => [
         'debug' => true,
         'explicitADmode' => 'explicitAllow',
-        'installToolPassword' => '$P$CxwHE0VHMQO.H1C4KY7q4XW7VQ4vvO/',
+        'installToolPassword' => '$P$CxPsf1BT4bKKgOwzylm8A8mVH9ghO41',
         'loginSecurityLevel' => 'rsa',
     ],
     'DB' => [
@@ -16,8 +16,14 @@ return [
     ],
     'EXT' => [
         'extConf' => [
+            'css_styled_content' => 'a:1:{s:32:"loadContentElementWizardTsConfig";s:1:"1";}',
+            'engine' => 'a:0:{}',
+            'news' => 'a:0:{}',
+            'realurl' => 'a:5:{s:10:"configFile";s:34:"typo3conf/RealurlConfiguration.php";s:14:"enableAutoConf";s:1:"0";s:14:"autoConfFormat";s:1:"1";s:12:"enableDevLog";s:1:"0";s:10:"moduleIcon";s:1:"0";}',
             'rsaauth' => 'a:1:{s:18:"temporaryDirectory";s:0:"";}',
             'saltedpasswords' => 'a:2:{s:3:"BE.";a:4:{s:21:"saltedPWHashingMethod";s:41:"TYPO3\\CMS\\Saltedpasswords\\Salt\\PhpassSalt";s:11:"forceSalted";i:0;s:15:"onlyAuthService";i:0;s:12:"updatePasswd";i:1;}s:3:"FE.";a:5:{s:7:"enabled";i:1;s:21:"saltedPWHashingMethod";s:41:"TYPO3\\CMS\\Saltedpasswords\\Salt\\PhpassSalt";s:11:"forceSalted";i:0;s:15:"onlyAuthService";i:0;s:12:"updatePasswd";i:1;}}',
+            'scheduler' => 'a:4:{s:11:"maxLifetime";s:4:"1440";s:11:"enableBELog";s:1:"1";s:15:"showSampleTasks";s:1:"1";s:11:"useAtdaemon";s:1:"0";}',
+            'vhs' => 'a:0:{}',
         ],
     ],
     'FE' => [

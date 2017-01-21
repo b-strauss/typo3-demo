@@ -68,6 +68,9 @@ return [
         'cshmanual' => [
             'packagePath' => 'typo3/sysext/cshmanual/',
         ],
+        'css_styled_content' => [
+            'packagePath' => 'typo3/sysext/css_styled_content/',
+        ],
         'documentation' => [
             'packagePath' => 'typo3/sysext/documentation/',
         ],
@@ -101,6 +104,9 @@ return [
         'reports' => [
             'packagePath' => 'typo3/sysext/reports/',
         ],
+        'scheduler' => [
+            'packagePath' => 'typo3/sysext/scheduler/',
+        ],
         'sv' => [
             'packagePath' => 'typo3/sysext/sv/',
         ],
@@ -118,6 +124,18 @@ return [
         ],
         'viewpage' => [
             'packagePath' => 'typo3/sysext/viewpage/',
+        ],
+        'vhs' => [
+            'packagePath' => 'typo3conf/ext/vhs/',
+        ],
+        'engine' => [
+            'packagePath' => 'typo3conf/ext/engine/',
+        ],
+        'news' => [
+            'packagePath' => 'typo3conf/ext/news/',
+        ],
+        'realurl' => [
+            'packagePath' => 'typo3conf/ext/realurl/',
         ],
     ],
     'version' => 5,

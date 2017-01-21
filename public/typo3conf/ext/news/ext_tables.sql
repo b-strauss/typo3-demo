@@ -1,8 +1,7 @@
 CREATE TABLE tx_typo3demo_news_domain_model_item (
-  PRIMARY KEY (uid),
-
   # default fields
   uid              INT(11)          NOT NULL auto_increment,
+  PRIMARY KEY (uid),
   pid              INT(11)          NOT NULL DEFAULT '0',
   created_at       INT(11)          NOT NULL DEFAULT '0',
   created_by       INT(11)          NOT NULL DEFAULT '0',
