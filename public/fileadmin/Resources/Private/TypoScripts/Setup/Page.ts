@@ -142,7 +142,6 @@ page {
       contentMain < styles.content.get
       contentMain {
         select.where = colPos = 0
-        slide = -1
       }
     }
   }
