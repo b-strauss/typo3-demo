@@ -1,3 +1,0 @@
-[submodule "public/typo3conf/ext/engine"]
-	path = public/typo3conf/ext/engine
-	url = git@github.com:b-strauss/engine.git
