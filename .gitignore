@@ -34,6 +34,7 @@ FIRST_INSTALL
 /public/typo3conf/l10n/
 
 # Ignore typo3 extensions installed with composer
+/public/typo3conf/ext/engine/
 /public/typo3conf/ext/realurl/
 /public/typo3conf/ext/vhs/
 
