@@ -68,9 +68,6 @@ return [
         'cshmanual' => [
             'packagePath' => 'typo3/sysext/cshmanual/',
         ],
-        'css_styled_content' => [
-            'packagePath' => 'typo3/sysext/css_styled_content/',
-        ],
         'documentation' => [
             'packagePath' => 'typo3/sysext/documentation/',
         ],

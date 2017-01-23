@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "b-strauss/engine",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/b-strauss/engine.git",
-                "reference": "eea861dc5bf535a2d3a7a28da84bc1f1b81210b9"
+                "reference": "52c1087f7c9b9be385e049902adffca1c230ca76"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/b-strauss/engine/zipball/eea861dc5bf535a2d3a7a28da84bc1f1b81210b9",
-                "reference": "eea861dc5bf535a2d3a7a28da84bc1f1b81210b9",
+                "url": "https://api.github.com/repos/b-strauss/engine/zipball/52c1087f7c9b9be385e049902adffca1c230ca76",
+                "reference": "52c1087f7c9b9be385e049902adffca1c230ca76",
                 "shasum": ""
             },
             "require": {
@@ -54,7 +54,7 @@
                 "utility",
                 "viewhelper"
             ],
-            "time": "2017-01-22T22:16:01+00:00"
+            "time": "2017-01-23T00:09:06+00:00"
         },
         {
             "name": "cogpowered/finediff",
