@@ -117,10 +117,10 @@ page {
   # css
   includeCSS {
     swiper = fileadmin/Resources/Public/JavaScripts/node_modules/swiper/dist/css/swiper.min.css
-    swiper.media = screen
+    swiper.media = all
 
     app = fileadmin/Resources/Public/StyleSheets/app.css
-    app.media = screen
+    app.media = all
   }
 
   # js
