@@ -9,14 +9,17 @@ switch (getenv('TYPO3_CONTEXT')) {
   case 'Development':
     // debug options
     ini_set('xdebug.max_nesting_level', 400);
+
     $GLOBALS['TYPO3_CONF_VARS']['BE']['debug'] = true;
     $GLOBALS['TYPO3_CONF_VARS']['BE']['warning_email_addr'] = '';
+
     $GLOBALS['TYPO3_CONF_VARS']['FE']['debug'] = true;
+
     $GLOBALS['TYPO3_CONF_VARS']['SYS']['devIPmask'] = '*';
     $GLOBALS['TYPO3_CONF_VARS']['SYS']['displayErrors'] = 1;
+    $GLOBALS['TYPO3_CONF_VARS']['SYS']['enableDeprecationLog'] = 'file';
     $GLOBALS['TYPO3_CONF_VARS']['SYS']['sqlDebug'] = 1;
     $GLOBALS['TYPO3_CONF_VARS']['SYS']['systemLogLevel'] = 0;
-    $GLOBALS['TYPO3_CONF_VARS']['SYS']['clearCacheSystem'] = true;
     $GLOBALS['TYPO3_CONF_VARS']['SYS']['exceptionalErrors'] = 28674;
 
     // install tool password
@@ -55,8 +58,28 @@ switch (getenv('TYPO3_CONTEXT')) {
     break;
 
   case 'Production/Staging':
-    break;
-
   case 'Production':
+    // debug options
+    $GLOBALS['TYPO3_CONF_VARS']['BE']['debug'] = false;
+    $GLOBALS['TYPO3_CONF_VARS']['BE']['warning_email_addr'] = '';
+
+    $GLOBALS['TYPO3_CONF_VARS']['FE']['debug'] = false;
+
+    $GLOBALS['TYPO3_CONF_VARS']['SYS']['devIPmask'] = '';
+    $GLOBALS['TYPO3_CONF_VARS']['SYS']['displayErrors'] = 0;
+    $GLOBALS['TYPO3_CONF_VARS']['SYS']['enableDeprecationLog'] = '';
+    $GLOBALS['TYPO3_CONF_VARS']['SYS']['sqlDebug'] = 0;
+    $GLOBALS['TYPO3_CONF_VARS']['SYS']['systemLogLevel'] = 3;
+
+    // install tool password
+    $GLOBALS['TYPO3_CONF_VARS']['BE']['installToolPassword'] = md5('install');
+
+    // database options
+    $GLOBALS['TYPO3_CONF_VARS']['DB']['Connections']['Default']['host'] = 'localhost';
+    $GLOBALS['TYPO3_CONF_VARS']['DB']['Connections']['Default']['port'] = 3306;
+    $GLOBALS['TYPO3_CONF_VARS']['DB']['Connections']['Default']['dbname'] = 'typo3-demo-db';
+    $GLOBALS['TYPO3_CONF_VARS']['DB']['Connections']['Default']['user'] = 'typo3-user';
+    $GLOBALS['TYPO3_CONF_VARS']['DB']['Connections']['Default']['password'] = 'typo3-pw';
+
     break;
 }
