@@ -135,7 +135,7 @@ AddDefaultCharset utf-8
   RewriteRule ^.*$ - [E=CWD:%2]
 
   # Rules to set ApplicationContext based on hostname
-  RewriteCond %{HTTP_HOST} (\.local)|(\.nb)$
+  RewriteCond %{HTTP_HOST} \.(local)|(nb)$
   RewriteRule .? - [E=TYPO3_CONTEXT:Development]
   RewriteCond %{HTTP_HOST} stage
   RewriteRule .? - [E=TYPO3_CONTEXT:Production/Staging]
