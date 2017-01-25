@@ -5,7 +5,7 @@
   "description": "typo3 demo project",
   "dependencies": {
     "google-closure-library": "v20161024.0.0",
-    "clulib": "1.0.0",
+    "clulib": "1.0.2",
     "externs": "1.0.0",
     "swiper": "3.4.1",
     "systemjs": "0.19.41"
