@@ -131,6 +131,9 @@ return [
         'news' => [
             'packagePath' => 'typo3conf/ext/news/',
         ],
+        'toolbox' => [
+            'packagePath' => 'typo3conf/ext/toolbox/',
+        ],
         'realurl' => [
             'packagePath' => 'typo3conf/ext/realurl/',
         ],

@@ -1,0 +1,16 @@
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+<f:comment>
+
+  Arguments:
+  - width
+  - height
+
+</f:comment>
+<v:variable.set name="factor" value="{v:math.division(a: height, b: width)}"/>
+<v:variable.set name="percentage" value="{v:math.product(a: factor, b: 100)}"/>
+<v:variable.set name="rounded" value="{v:math.round(a: percentage, decimals: 2)}"/>
+<div class="tb-aspect-ratio" style="padding-top: {rounded}%">
+  <div class="fit">
+    <f:format.raw>{slot-default}</f:format.raw>
+  </div>
+</div>

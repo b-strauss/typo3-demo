@@ -5,11 +5,14 @@
  */
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'News',
+    'title' => 'Toolbox',
     'description' => '',
-    'category' => 'plugin',
+    'category' => 'misc',
     'constraints' => [
         'depends' => [
+            'php' => '7.0.0',
+            'typo3' => '8.4.0',
+            'vhs' => '3.1.0',
             'engine' => '1.0.0',
         ],
         'conflicts' => [],
@@ -20,7 +23,7 @@ $EM_CONF[$_EXTKEY] = [
     'createDirs' => '',
     'clearCacheOnLoad' => true,
     'author' => 'Benjamin Strauß',
-    'author_email' => '',
+    'author_email' => 'benmastra@gmail.com',
     'author_company' => '',
-    'version' => '0.1.0',
+    'version' => '1.0.0',
 ];

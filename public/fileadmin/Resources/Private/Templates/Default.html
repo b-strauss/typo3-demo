@@ -1,9 +1,17 @@
 {namespace v=FluidTYPO3\Vhs\ViewHelpers}
+{namespace ng=BStrauss\Engine\ViewHelpers}
 <header>
   Header
 </header>
 <main>
   <f:format.raw>{contentMain}</f:format.raw>
+  <ng:render path="EXT:toolbox/Resources/Public/lib/aspect-ratio/aspect-ratio.html"
+             arguments="{
+               width: 200,
+               height: 100
+             }">
+    lorem ipsum
+  </ng:render>
 </main>
 <footer>
   Footer
