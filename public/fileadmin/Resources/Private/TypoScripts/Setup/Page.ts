@@ -2,8 +2,7 @@
 page = PAGE
 page {
   bodyTagCObject = TEXT
-  bodyTagCObject.field = uid
-  bodyTagCObject.wrap = <body id="page-|">
+  bodyTagCObject.stdWrap.dataWrap = <body id="page-id-{field:uid}" class="page-layout-{field:backend_layout}">
 
   bodyTagCObject.append = TEXT
   bodyTagCObject.append.value (
@@ -11,9 +10,10 @@ page {
 
   headerData {
     # title
+    # use subtitle if present, else use title
     10 = TEXT
     10 {
-      field = title
+      field = subtitle // title
       wrap = <title>|</title>
     }
 
