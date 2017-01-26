@@ -10,11 +10,24 @@ page {
 
   headerData {
     # title
-    # use subtitle if present, else use title
-    10 = TEXT
+    # consists of current page title plus rootpage title
+    10 = COA
     10 {
-      field = subtitle // title
       wrap = <title>|</title>
+
+      10 = TEXT
+      10 {
+        field = title
+      }
+
+      20 = TEXT
+      20.value = &nbsp;-&nbsp;
+
+      30 = TEXT
+      30 {
+        insertData = 1
+        data = leveltitle:0
+      }
     }
 
     # keywords
