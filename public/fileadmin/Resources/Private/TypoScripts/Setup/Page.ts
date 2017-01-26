@@ -31,36 +31,27 @@ page {
     }
 
     # keywords
-    20 = COA
+    20 = TEXT
     20 {
-      1 = TEXT
-      1 {
-        if.isTrue.field = keywords
-        field = keywords
-        wrap = <meta name="keywords" content="|">
-      }
+      if.isTrue.field = keywords
+      field = keywords
+      wrap = <meta name="keywords" content="|">
     }
 
     # description
-    30 = COA
+    30 = TEXT
     30 {
-      1 = TEXT
-      1 {
-        if.isTrue.field = description
-        field = description
-        wrap = <meta name="description" content="|">
-      }
+      if.isTrue.field = description
+      field = description
+      wrap = <meta name="description" content="|">
     }
 
     # author
-    40 = COA
+    40 = TEXT
     40 {
-      1 = TEXT
-      1 {
-        if.isTrue.field = author
-        field = author
-        wrap = <meta name="author" content="|">
-      }
+      if.isTrue.field = author
+      field = author
+      wrap = <meta name="author" content="|">
     }
 
     # device config
