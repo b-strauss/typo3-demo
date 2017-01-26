@@ -1,2 +1,2 @@
 (function(){%output%})();
-//# sourceMappingURL=app.min.js.map
+//# sourceMappingURL=/fileadmin/Resources/Public/JavaScripts/app.min.js.map
