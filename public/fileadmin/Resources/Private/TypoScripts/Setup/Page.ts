@@ -2,11 +2,9 @@
 page = PAGE
 page {
   bodyTagCObject = TEXT
-  bodyTagCObject.stdWrap.dataWrap = <body id="page-id-{field:uid}" class="page-layout-{field:backend_layout}">
-
-  bodyTagCObject.append = TEXT
-  bodyTagCObject.append.value (
-  )
+  bodyTagCObject {
+    stdWrap.dataWrap = <body id="page-id-{field:uid}" class="page-layout-{field:backend_layout}">
+  }
 
   headerData {
     # title
