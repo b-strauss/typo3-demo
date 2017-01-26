@@ -138,7 +138,10 @@ page {
 
   # js
   includeJSFooter {
+    # never compress systemjs
     systemjs = fileadmin/Resources/Public/JavaScripts/node_modules/systemjs/dist/system.js
+    systemjs.disableCompression = 1
+
     app = fileadmin/Resources/Public/JavaScripts/app.min.js
   }
 
