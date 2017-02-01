@@ -38,6 +38,7 @@ FIRST_INSTALL
 /public/typo3conf/ext/vhs/
 
 # Ignore javascript files
+/public/fileadmin/Resources/Public/JavaScripts/unix.deps.sh
 /public/fileadmin/Resources/Public/JavaScripts/node_modules/
 /public/fileadmin/Resources/Public/JavaScripts/app-deps.js
 /public/fileadmin/Resources/Public/JavaScripts/app.min.js
