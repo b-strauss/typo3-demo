@@ -1,1 +1,0 @@
-sed -e 's/\\/\//g' -e 's/\^/\\/' compile.bat > unix.compile.sh && sh unix.compile.sh
