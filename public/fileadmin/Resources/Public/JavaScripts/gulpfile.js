@@ -16,7 +16,7 @@ gulp.task('js-compile-dev', function () {
  * @returns {*}
  */
 function compileJS(opt_dev) {
-  const input = [
+  const inputs = [
     path.normalize('node_modules/google-closure-library/closure/goog/**.js'),
     path.normalize('!node_modules/google-closure-library/closure/goog/**_test.js'),
     path.normalize('node_modules/clulib/lib/**.js'),
@@ -32,11 +32,11 @@ function compileJS(opt_dev) {
   const destinationFolder = path.normalize('./');
   const sourceMapUrl = '/fileadmin/Resources/Public/JavaScripts/app.min.js.map';
 
-  return compileJSHelper(input, externs, entryPoint, destinationFolder, opt_dev, sourceMapUrl);
+  return compileJSHelper(inputs, externs, entryPoint, destinationFolder, opt_dev, sourceMapUrl);
 }
 
 /**
- * @param {Array<string>} input
+ * @param {Array<string>} inputs
  * @param {Array<string>} externs
  * @param {string} entryPoint
  * @param {string} destinationFolder
@@ -44,11 +44,11 @@ function compileJS(opt_dev) {
  * @param {string=} opt_sourceMapUrl
  * @returns {*}
  */
-function compileJSHelper(input, externs, entryPoint, destinationFolder, opt_dev, opt_sourceMapUrl) {
+function compileJSHelper(inputs, externs, entryPoint, destinationFolder, opt_dev, opt_sourceMapUrl) {
   const development = opt_dev || false;
 
   const options = {
-    js: input,
+    js: inputs,
     externs: externs,
     entry_point: entryPoint,
     language_in: 'ECMASCRIPT6',
