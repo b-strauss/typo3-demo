@@ -72,8 +72,6 @@ function depsJSHelper(callback, roots, opt_nodeModulesFolder, opt_outputFolder) 
 
   command += ' > ' + path.normalize(outputFolder + 'app-deps.js');
 
-  console.log(command);
-
   exec(command, function (err) {
     callback(err);
   });
