@@ -34,19 +34,19 @@ function depsJS(callback) {
  */
 function compileJS(opt_dev) {
   const inputs = [
-    path.normalize('node_modules/google-closure-library/closure/goog/**.js'),
-    path.normalize('!node_modules/google-closure-library/closure/goog/**_test.js'),
-    path.normalize('node_modules/clulib/lib/**.js'),
-    path.normalize('../Components/**.js'),
-    path.normalize('src/t3demo/**.js')
+    'node_modules/google-closure-library/closure/goog/**.js',
+    '!node_modules/google-closure-library/closure/goog/**_test.js',
+    'node_modules/clulib/lib/**.js',
+    '../Components/**.js',
+    'src/t3demo/**.js'
   ];
   const externs = [
-    path.normalize('node_modules/externs/picturefill/picturefill-3.0.2.js'),
-    path.normalize('node_modules/externs/swiper/swiper-3.4.1.js'),
-    path.normalize('node_modules/externs/systemjs/systemjs-0.19.41.js')
+    'node_modules/externs/picturefill/picturefill-3.0.2.js',
+    'node_modules/externs/swiper/swiper-3.4.1.js',
+    'node_modules/externs/systemjs/systemjs-0.19.41.js'
   ];
   const entryPoint = 't3demo.App';
-  const destinationFolder = path.normalize('./');
+  const destinationFolder = './';
   const sourceMapUrl = '/fileadmin/Resources/Public/JavaScripts/app.min.js.map';
 
   return compileJSHelper(inputs, externs, entryPoint, destinationFolder, opt_dev, sourceMapUrl);
@@ -89,9 +89,11 @@ function depsJSHelper(callback, roots, opt_nodeModulesFolder, opt_outputFolder) 
 function compileJSHelper(inputs, externs, entryPoint, destinationFolder, opt_dev, opt_sourceMapUrl) {
   const development = opt_dev || false;
 
+  destinationFolder = path.normalize(destinationFolder);
+
   const options = {
-    js: inputs,
-    externs: externs,
+    js: inputs.map(input => path.normalize(input)),
+    externs: externs.map(extern => path.normalize(extern)),
     entry_point: entryPoint,
     language_in: 'ECMASCRIPT6',
     language_out: 'ECMASCRIPT5',

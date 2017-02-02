@@ -12,5 +12,8 @@
     "google-closure-compiler": "20161024.2.0",
     "gulp": "~3.9.1",
     "gulp-sourcemaps": "~2.4.0"
+  },
+  "engines": {
+    "node": ">=6.9.0"
   }
 }
