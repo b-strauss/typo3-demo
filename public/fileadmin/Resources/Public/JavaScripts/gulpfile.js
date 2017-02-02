@@ -1,7 +1,12 @@
 const path = require('path');
 const gulp = require('gulp');
+const exec = require('child_process').exec;
 const sourcemaps = require('gulp-sourcemaps');
 const closureCompiler = require('google-closure-compiler').gulp();
+
+gulp.task('js-deps', function (callback) {
+  return depsJS(callback);
+});
 
 gulp.task('js-compile-prod', function () {
   return compileJS();
@@ -10,6 +15,18 @@ gulp.task('js-compile-prod', function () {
 gulp.task('js-compile-dev', function () {
   return compileJS(true);
 });
+
+/**
+ * @param {Function} callback
+ */
+function depsJS(callback) {
+  const roots = {
+    './': '../../../..',
+    '../Components': '../../../../../Components'
+  };
+
+  depsJSHelper(callback, roots);
+}
 
 /**
  * @param {boolean=} opt_dev
@@ -33,6 +50,33 @@ function compileJS(opt_dev) {
   const sourceMapUrl = '/fileadmin/Resources/Public/JavaScripts/app.min.js.map';
 
   return compileJSHelper(inputs, externs, entryPoint, destinationFolder, opt_dev, sourceMapUrl);
+}
+
+/**
+ * @param {Function} callback
+ * @param {Object<string, string>} roots
+ * @param {string=} opt_nodeModulesFolder
+ * @param {string=} opt_outputFolder
+ */
+function depsJSHelper(callback, roots, opt_nodeModulesFolder, opt_outputFolder) {
+  const nodeModulesFolder = opt_nodeModulesFolder || './node_modules/';
+  const outputFolder = opt_outputFolder || './';
+  const depswriter = path.normalize(nodeModulesFolder + '/google-closure-library/closure/bin/build/depswriter.py');
+
+  let command = 'python ' + depswriter;
+
+  for (let key in roots) {
+    if (roots.hasOwnProperty(key))
+      command += ' --root_with_prefix="' + path.normalize(key) + ' ' + path.normalize(roots[key]) + '"';
+  }
+
+  command += ' > ' + path.normalize(outputFolder + 'app-deps.js');
+
+  console.log(command);
+
+  exec(command, function (err) {
+    callback(err);
+  });
 }
 
 /**
