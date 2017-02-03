@@ -34,9 +34,6 @@ switch (getenv('TYPO3_CONTEXT')) {
 
     switch ($_SERVER['HTTP_HOST']) {
       case 'typo3-demo.b-strauss.local':
-        // openssl fix
-        $GLOBALS['TYPO3_CONF_VARS']['SYS']['binSetup'] = 'openssl="C:/OpenSSL-Win64/bin/openssl.exe"';
-
         // image processing
         $GLOBALS['TYPO3_CONF_VARS']['GFX']['processor'] = 'GraphicsMagick';
         $GLOBALS['TYPO3_CONF_VARS']['GFX']['processor_path'] = 'C:/Program Files/GraphicsMagick-1.3.25-Q16/';
@@ -45,9 +42,6 @@ switch (getenv('TYPO3_CONTEXT')) {
         break;
 
       case 'typo3-demo.nb160a.emp.nb':
-        // openssl fix
-        $GLOBALS['TYPO3_CONF_VARS']['SYS']['binSetup'] = 'openssl="C:/MAMP/bin/apache/bin/openssl.exe"';
-
         // image processing
         $GLOBALS['TYPO3_CONF_VARS']['GFX']['processor'] = 'GraphicsMagick';
         $GLOBALS['TYPO3_CONF_VARS']['GFX']['processor_path'] = 'C:/Program Files/GraphicsMagick-1.3.23-Q16/';
