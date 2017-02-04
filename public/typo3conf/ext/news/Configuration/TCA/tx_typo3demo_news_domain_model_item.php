@@ -10,6 +10,7 @@ $newsItem = new \BStrauss\Engine\Tca\Builder(
 );
 
 $newsItem
+    ->addTab('Tab 1')
     ->addInput(
         'title',
         'LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:tx_typo3demo_news_domain_model_item.title',
@@ -24,6 +25,7 @@ $newsItem
         'inverted',
         'LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:tx_typo3demo_news_domain_model_item.inverted'
     )
+    ->addTab('Tab 2')
     ->addRadioButtons(
         'size',
         'LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:tx_typo3demo_news_domain_model_item.size',
