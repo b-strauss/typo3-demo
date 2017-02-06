@@ -20,11 +20,6 @@ class Item extends AbstractItem {
   protected $text;
 
   /**
-   * @var \TYPO3\CMS\Extbase\Domain\Model\FileReference
-   */
-  protected $image;
-
-  /**
    * @var boolean
    */
   protected $inverted;
@@ -34,10 +29,15 @@ class Item extends AbstractItem {
    */
   protected $size;
 
-  ///**
-  // * @var string
-  // */
-  //protected $link;
+  /**
+   * @var string
+   */
+  protected $color;
+
+  /**
+   * @var \TYPO3\CMS\Extbase\Domain\Model\FileReference
+   */
+  protected $image;
 
   /**
    * @return \BStrauss\Typo3Demo\News\Domain\Model\Content
@@ -82,28 +82,14 @@ class Item extends AbstractItem {
   }
 
   /**
-   * @return \TYPO3\CMS\Extbase\Domain\Model\FileReference
-   */
-  public function getImage() {
-    return $this->image;
-  }
-
-  /**
-   * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $image
-   */
-  public function setImage($image) {
-    $this->image = $image;
-  }
-
-  /**
-   * @return boolean
+   * @return bool
    */
   public function isInverted() {
     return $this->inverted;
   }
 
   /**
-   * @param boolean $inverted
+   * @param bool $inverted
    */
   public function setInverted($inverted) {
     $this->inverted = $inverted;
@@ -121,5 +107,33 @@ class Item extends AbstractItem {
    */
   public function setSize($size) {
     $this->size = $size;
+  }
+
+  /**
+   * @return string
+   */
+  public function getColor() {
+    return $this->color;
+  }
+
+  /**
+   * @param string $color
+   */
+  public function setColor($color) {
+    $this->color = $color;
+  }
+
+  /**
+   * @return \TYPO3\CMS\Extbase\Domain\Model\FileReference
+   */
+  public function getImage() {
+    return $this->image;
+  }
+
+  /**
+   * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $image
+   */
+  public function setImage($image) {
+    $this->image = $image;
   }
 }

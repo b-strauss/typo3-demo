@@ -44,7 +44,7 @@ $newsItem
             ],
         ]
     )
-    ->addSelect(
+    ->addMultiSelect(
         'color',
         'LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:tx_typo3demo_news_domain_model_item.color',
         [
