@@ -1,9 +1,7 @@
 goog.provide('t3demo.App');
 
-goog.require('clulib.async.Completer');
 goog.require('clulib.cm.ComponentManager');
 
-goog.require('t3demo.net.libs');
 goog.require('t3demo.components');
 
 /**
@@ -26,24 +24,6 @@ t3demo.App = function () {
 /**
  * @returns {Promise}
  */
-t3demo.App.prototype.waitForPolyfills = function () {
-  if (window['__isPolyfillLoaded'] === true)
-    return Promise.resolve();
-
-  let completer = new clulib.async.Completer();
-
-  window['__onPolyfillLoaded'] = () => {
-    window['__isPolyfillLoaded'] = true;
-    window['__onPolyfillLoaded'] = null;
-    completer.resolve();
-  };
-
-  return completer.getPromise();
-};
-
-/**
- * @returns {Promise}
- */
 t3demo.App.prototype.init = function () {
   return this.manager_.decorate();
 };
@@ -52,5 +32,4 @@ t3demo.App.prototype.init = function () {
  * @type {t3demo.App}
  */
 const app = new t3demo.App();
-app.waitForPolyfills()
-    .then(() => app.init());
+app.init();

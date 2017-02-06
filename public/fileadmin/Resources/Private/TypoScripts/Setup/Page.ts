@@ -84,22 +84,9 @@ page {
       <link rel="mask-icon" href="fileadmin/Resources/Public/Images/Favicon/safari-pinned-tab.svg" color="#ff8700">
     )
 
-    # polyfill.io: https://polyfill.io/
-    # loads sets: default-3.6, HTMLPictureElement
+    # browser version check: https://browser-update.org/
     80 = TEXT
     80.value (
-      <script>
-        var __isPolyfillLoaded = false;
-        function __onPolyfillLoaded () {
-          __isPolyfillLoaded = true;
-        };
-      </script>
-      <script src="https://cdn.polyfill.io/v2/polyfill.min.js?callback=__onPolyfillLoaded&features=default-3.6,HTMLPictureElement" defer></script>
-    )
-
-    # browser version check: https://browser-update.org/
-    90 = TEXT
-    90.value (
       <script>
         var $buoop = {vs: {i: 10, f: -4, o: -4, s: 8, c: -4}, c: 4};
         function $buo_f() {
@@ -127,7 +114,11 @@ page {
 
   # js
   includeJSFooter {
-    # never compress systemjs
+    # polyfill.io: https://polyfill.io/
+    # loads sets: default-3.6, HTMLPictureElement
+    polyfill = https://cdn.polyfill.io/v2/polyfill.min.js?features=default-3.6,HTMLPictureElement
+    polyfill.disableCompression = 1
+
     systemjs = fileadmin/Resources/Public/JavaScripts/node_modules/systemjs/dist/system.js
     systemjs.disableCompression = 1
 
