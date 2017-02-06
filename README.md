@@ -2,13 +2,13 @@
 
 ## Required tools
 
-- git
 - composer
+- php 7
 - mysql
 - java 8
 - python 2
 - ruby 2.1 + sass + compass
-- nodejs
+- nodejs + gulp
 
 ## Installing
 
@@ -43,29 +43,36 @@ Use `utf8_unicode_ci` collation
 
 ## Building
 
-### JavaScript - closure deps for local development
+### building javascript deps
 ```
-cd public/fileadmin/Resources/Public/JavaScripts/build
-deps.bat
+cd public/fileadmin/Resources/Public/JavaScripts
+gulp js-deps
 ```
-use deps.sh for unix systems
 
-### JavaScript - closure compiling for production
+### compiling javascript
+with sourcemaps and `goog.DEBUG=true`
 ```
-cd public/fileadmin/Resources/Public/JavaScripts/build
-compile.bat
+cd public/fileadmin/Resources/Public/JavaScripts
+gulp js-compile-dev
 ```
-use compile.sh for unix systems
 
-### SCSS - development
+without sourcemaps and `goog.DEBUG=false`
+```
+cd public/fileadmin/Resources/Public/JavaScripts
+gulp js-compile-prod
+```
+
+### css
 ```
 cd public/fileadmin/Resources/Public/Scss
+```
+
+for source maps
+```
 compass watch -e development
 ```
-for source maps
 
-### SCSS - production
+for production
 ```
-cd public/fileadmin/Resources/Public/Scss
 compass compile -e production --force
 ```
