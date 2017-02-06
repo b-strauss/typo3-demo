@@ -1,4 +1,4 @@
-# documentation: https://docs.typo3.org/typo3cms/TyposcriptReference/7.6/Setup/Page/
+# documentation: https://docs.typo3.org/typo3cms/TyposcriptReference/Setup/Page/
 page = PAGE
 page {
   bodyTagCObject = TEXT
@@ -125,7 +125,7 @@ page {
     app = fileadmin/Resources/Public/JavaScripts/app.min.js
   }
 
-  # documentation: https://docs.typo3.org/typo3cms/TyposcriptReference/7.6/ContentObjects/Fluidtemplate/
+  # documentation: https://docs.typo3.org/typo3cms/TyposcriptReference/ContentObjects/Fluidtemplate/
   10 = FLUIDTEMPLATE
   10 {
     templateRootPath = fileadmin/Resources/Private/Templates

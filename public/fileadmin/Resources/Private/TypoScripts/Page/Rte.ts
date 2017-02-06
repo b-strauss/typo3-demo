@@ -1,4 +1,4 @@
-# documentation: https://docs.typo3.org/typo3cms/extensions/rtehtmlarea/7.6/Configuration/PageTsconfig/interfaceConfiguration/
+# documentation: https://docs.typo3.org/typo3cms/extensions/rtehtmlarea/Configuration/PageTsconfig/interfaceConfiguration/
 RTE.default {
   showButtons = bold, italic, underline, orderedlist, unorderedlist, left, center, right, insertcharacter, link, undo, redo, chMode, removeformat, textstyle
   toolbarOrder = bold, italic, underline, bar, orderedlist, unorderedlist, bar, left, center, right, bar, textstyle, bar, insertcharacter, bar, link, bar, undo, redo, bar, chMode, bar, removeformat

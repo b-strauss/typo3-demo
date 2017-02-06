@@ -1,4 +1,4 @@
-# documentation: https://docs.typo3.org/typo3cms/TyposcriptReference/7.6/Setup/Config/
+# documentation: https://docs.typo3.org/typo3cms/TyposcriptReference/Setup/Config/
 config {
   admPanel = 0
   admPanel.enable.preview = 0
@@ -22,7 +22,7 @@ config {
   tx_realurl_enable = 1
 }
 
-# documentation: https://docs.typo3.org/typo3cms/FrontendLocalizationGuide/BasicSetupOfALocalizedWebsite/DefiningTheDefaultLanguageFlag/
+# documentation: https://docs.typo3.org/typo3cms/FrontendLocalizationGuide/DefaultLanguageFlag/Index.html
 mod.SHARED {
   defaultLanguageFlag = de
   defaultLanguageLabel = German
