@@ -50,7 +50,7 @@ function compileJS(inputs, externs, entryPoint, destinationFolder, opt_dev, opt_
     externs: externs.map(extern => path.normalize(extern)),
     entry_point: entryPoint,
     language_in: 'ECMASCRIPT6',
-    language_out: 'ECMASCRIPT5_STRICT',
+    language_out: 'ECMASCRIPT5',
     compilation_level: 'ADVANCED',
     warning_level: 'VERBOSE',
     define: [],
