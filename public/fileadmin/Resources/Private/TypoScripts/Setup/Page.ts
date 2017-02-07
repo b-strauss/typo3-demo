@@ -115,8 +115,8 @@ page {
   # js
   includeJSFooter {
     # polyfill.io: https://polyfill.io/
-    # loads sets: default-3.6, HTMLPictureElement
-    polyfill = https://cdn.polyfill.io/v2/polyfill.min.js?features=default-3.6,HTMLPictureElement
+    # loads sets: HTMLPictureElement
+    polyfill = https://cdn.polyfill.io/v2/polyfill.min.js?features=HTMLPictureElement
     polyfill.disableCompression = 1
 
     systemjs = fileadmin/Resources/Public/JavaScripts/node_modules/systemjs/dist/system.js
