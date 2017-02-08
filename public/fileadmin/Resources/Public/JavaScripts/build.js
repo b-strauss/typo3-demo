@@ -50,7 +50,7 @@ function compileJS(inputs, externs, entryPoint, destinationFolder, opt_dev, opt_
     externs: externs.map(extern => path.normalize(extern)),
     entry_point: entryPoint,
     language_in: 'ECMASCRIPT6',
-    language_out: 'ECMASCRIPT5',
+    language_out: 'ECMASCRIPT5_STRICT',
     compilation_level: 'ADVANCED',
     warning_level: 'VERBOSE',
     define: [],
@@ -73,7 +73,7 @@ function compileJS(inputs, externs, entryPoint, destinationFolder, opt_dev, opt_
       'extraRequire',
       'inferredConstCheck'
     ],
-    output_wrapper: '(function(){%output%})();',
+    output_wrapper: '(function(){%output%}).call(this);',
     js_output_file: 'app.min.js'
   };
 
