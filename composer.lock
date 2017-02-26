@@ -59,21 +59,21 @@
         },
         {
             "name": "dmitryd/typo3-realurl",
-            "version": "2.1.7",
+            "version": "2.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmitryd/typo3-realurl.git",
-                "reference": "6bec81ddd6563b64c0f0f09ded81e0bbda8667e3"
+                "reference": "5283341b56ec9f4212c6cdd4c54e82d06c0401dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmitryd/typo3-realurl/zipball/6bec81ddd6563b64c0f0f09ded81e0bbda8667e3",
-                "reference": "6bec81ddd6563b64c0f0f09ded81e0bbda8667e3",
+                "url": "https://api.github.com/repos/dmitryd/typo3-realurl/zipball/5283341b56ec9f4212c6cdd4c54e82d06c0401dd",
+                "reference": "5283341b56ec9f4212c6cdd4c54e82d06c0401dd",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.4.0",
-                "typo3/cms-core": ">=6.2.0,<8.6.0"
+                "typo3/cms-core": ">=6.2.0,<8.7.0"
             },
             "conflict": {
                 "bednee/cooluri": ">0.0.1",
@@ -124,16 +124,16 @@
         },
         {
             "name": "doctrine/annotations",
-            "version": "v1.3.1",
+            "version": "v1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "bd4461328621bde0ae6b1b2675fbc6aca4ceb558"
+                "reference": "54cacc9b81758b14e3ce750f205a393d52339e97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/bd4461328621bde0ae6b1b2675fbc6aca4ceb558",
-                "reference": "bd4461328621bde0ae6b1b2675fbc6aca4ceb558",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/54cacc9b81758b14e3ce750f205a393d52339e97",
+                "reference": "54cacc9b81758b14e3ce750f205a393d52339e97",
                 "shasum": ""
             },
             "require": {
@@ -142,7 +142,7 @@
             },
             "require-dev": {
                 "doctrine/cache": "1.*",
-                "phpunit/phpunit": "^5.6.1"
+                "phpunit/phpunit": "^5.7"
             },
             "type": "library",
             "extra": {
@@ -188,7 +188,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2016-12-30T15:59:45+00:00"
+            "time": "2017-02-24T16:22:25+00:00"
         },
         {
             "name": "doctrine/cache",
@@ -1690,16 +1690,16 @@
         },
         {
             "name": "typo3fluid/fluid",
-            "version": "2.3.0",
+            "version": "2.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/Fluid.git",
-                "reference": "b36c00a756cea9df944be0ef2e4827554646832a"
+                "reference": "117ea779232ff6299c5659e8ee3583509e851eca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/Fluid/zipball/b36c00a756cea9df944be0ef2e4827554646832a",
-                "reference": "b36c00a756cea9df944be0ef2e4827554646832a",
+                "url": "https://api.github.com/repos/TYPO3/Fluid/zipball/117ea779232ff6299c5659e8ee3583509e851eca",
+                "reference": "117ea779232ff6299c5659e8ee3583509e851eca",
                 "shasum": ""
             },
             "require": {
@@ -1725,7 +1725,7 @@
                 "LGPL-3.0"
             ],
             "description": "The TYPO3 Fluid template rendering engine",
-            "time": "2017-02-15T18:40:29+00:00"
+            "time": "2017-02-22T05:27:39+00:00"
         }
     ],
     "packages-dev": [],
